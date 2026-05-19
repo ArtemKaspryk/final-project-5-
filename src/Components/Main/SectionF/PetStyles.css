@@ -1,0 +1,39 @@
+.pets-wrapper {
+    padding: 40px;
+}
+
+.pets-header {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.pets-list {
+    display: flex;
+    gap: 20px;
+}
+
+.pets-cards {
+    width: 25%;
+}
+
+.pet-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.pet-title {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.pets-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: orange;
+    color: black;
+    cursor: pointer;
+}

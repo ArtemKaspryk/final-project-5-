@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    padding: 15px 75px;
+    background-color: #fff;
+}
+
+.logo {
+
+}
+
+.nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-family: Montserrat Alternates;
+}
+
+.nav a:hover {
+    font-size: larger;
+}
+
+.sign-up {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.signup-btn {
+    padding: 5px 10px;
+    border: none;
+    background-color: #FFB36C;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.signup-btn-text {
+    color: black;
+    text-decoration: none;
+}
+
+.profile-pic {
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+    cursor: pointer;
+}
