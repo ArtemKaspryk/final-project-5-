@@ -1,7 +1,6 @@
 .cards-container {
   display: flex;
   gap: 20px;
-  justify-content: center;
   margin-top: 20px;
 }
 
@@ -144,4 +143,37 @@
 
 .expanded-boxes {
   width: fit-content;
+}
+
+@media (max-width: 768px) {
+  .cards-container{
+     display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      height: 490px;
+      overflow: hidden;
+      padding: 20px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards-container{
+     display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      height: 490px;
+      overflow: hidden;
+  }
+}
+
+@media (max-width: 320px) {
+  .cards-container{
+     display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+      overflow-x: visible;
+  }
+
+  .card{
+    width: 75%;
+    
+  }
 }

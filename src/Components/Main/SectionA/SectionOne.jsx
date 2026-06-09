@@ -3,8 +3,7 @@ import './SectionOneStyles.css'
 
 function SectionOne() {
     return (
-        <div>
-            <section className="section-one">
+        <div className="section-one">
                 <div className="content">
                     <h1>Weather dashboard</h1>
                     <div className='section_one_box'>
@@ -19,7 +18,6 @@ function SectionOne() {
                         <button>search</button>
                     </div>
                 </div>
-            </section>
         </div>
     );
 }

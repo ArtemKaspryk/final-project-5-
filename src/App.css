@@ -202,3 +202,7 @@
   margin-bottom: 12px;
   color: #333;
 }
+
+.body{
+  height: fit-content;
+}

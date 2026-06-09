@@ -45,3 +45,19 @@
     border-radius: 50%;
     cursor: pointer;
 }
+
+@media (max-width: 480px) {
+    .header{
+        padding: 10px 10px;
+    }    
+}
+
+@media (max-width: 320px) {
+    .no-sign-up, .nav{
+        display: none;
+    }    
+
+    .logo{
+        margin-left: 37%;
+    }
+}

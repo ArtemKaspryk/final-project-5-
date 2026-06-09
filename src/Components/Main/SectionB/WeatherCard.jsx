@@ -5,10 +5,7 @@ import heart from '../../../assets/heart.png';
 import deletee from '../../../assets/delete.png';
 import GeneralInfo from '../SectionC/GeneralInfo'
 import HourlyChart from '../SectionD/HourlyChart'
-import hourlyData from '../SectionD/HourlyData'
 import Forecast8Day from '../SectionE/Forecast8Day'
-import forecast8 from '../SectionE/ForecastData'
-
 
 const WeatherCard = ({ city, country, time, date, temp, onExpand }) => {
   const [expanded, setExpanded] = useState(false);
@@ -17,9 +14,8 @@ const WeatherCard = ({ city, country, time, date, temp, onExpand }) => {
     const newState = !expanded;
     setExpanded(newState);
 
-    // Notify App ONLY when opening
-    if (newState && onExpand) {
-      onExpand();
+    if (onExpand) {
+      onExpand(newState);   // send TRUE when opening, FALSE when closing
     }
   };
 
@@ -56,21 +52,6 @@ const WeatherCard = ({ city, country, time, date, temp, onExpand }) => {
           <span><img src={deletee} alt="" /></span>
         </div>
       </div>
-
-      {expanded && (
-        <div className="expanded-boxes">
-          <>
-            <GeneralInfo />
-
-            <div className="chart-container">
-              <h3 className="chart-title">Hourly forecast</h3>
-              <HourlyChart data={hourlyData} />
-            </div>
-
-            <Forecast8Day data={forecast8} />
-          </>
-        </div>
-      )}
 
     </div>
   );

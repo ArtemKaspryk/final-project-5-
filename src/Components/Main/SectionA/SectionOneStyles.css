@@ -68,3 +68,20 @@ span {
   background: #FFB36C;
   color: black;
 }
+
+@media (max-width: 768px) {
+  .section-one{
+  }
+}
+
+@media (max-width: 480px) {
+  .search{
+    max-width: 200px;
+    align-self: center;
+
+  }
+
+  .section_one_box{
+    align-self: center;
+  }
+}

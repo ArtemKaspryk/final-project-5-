@@ -18,7 +18,7 @@ function App() {
   const [showDetails, setShowDetails] = useState(false);
 
   return (
-    <>
+    <div className='body'>
       <header>
         <Header />
       </header>
@@ -26,11 +26,9 @@ function App() {
       <section>
         <SectionOne />
 
-        {/* Weather cards now trigger expansion */}
-        <WeatherCards onExpand={() => setShowDetails(true)} />
+        <WeatherCards onExpand={(state) => setShowDetails(state)} />
 
-        {/* Sections C, D, E hidden until See more */}
-        {/* {showDetails && (
+        {showDetails && (
           <>
             <GeneralInfo />
 
@@ -41,7 +39,7 @@ function App() {
 
             <Forecast8Day data={forecast8} />
           </>
-        )} */}
+        )}
 
         <Pet />
 
@@ -52,7 +50,7 @@ function App() {
       </section>
 
       <Footer />
-    </>
+    </div>
   )
 }
 

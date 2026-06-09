@@ -21,10 +21,10 @@ function ImageSlider() {
   const prevSlide = () => setIndex((i) => (i - 1 + images.length) % images.length);
 
   // Auto-slide
-  useEffect(() => {
-    const interval = setInterval(nextSlide, 4000);
-    return () => clearInterval(interval);
-  }, []);
+  // useEffect(() => {
+  //   const interval = setInterval(nextSlide, 4000);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   // Start dragging
   const handlePointerDown = (e) => {
